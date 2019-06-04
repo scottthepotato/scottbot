@@ -111,5 +111,5 @@ client.on('message', message => {
 
 
 ///login key
-client.login('NTg1MzA3MjA4MTAzNzU1Nzg3.XPYNLA._7r2kXrY5slNUAx3WtyL6lY8ucc');
+client.login('TPar1Yel6EapYgLn9nEhv9OAGce5ZXtA');
 
