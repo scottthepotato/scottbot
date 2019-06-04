@@ -27,22 +27,16 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 's!inbedtest') {
-    const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setTitle('Little Owl Games')
-	.setURL('https://discord.js.org/')
-	.setAuthor('Scott Hicks', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
-	.setDescription('Some description here')
-	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
-	.addField('Title', 'Some value here')
-	.addBlankField()
-	.addField('Inline field title', 'Some value here', true)
-	.addField('Inline field title', 'Some value here', true)
-	.addField('Inline field title', 'Some value here', true)
-	.setImage('https://i.imgur.com/wSTFkRM.png')
-	.setTimestamp()
-	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
-    msg.channel.send(exampleEmbed);
+    const embed = new Discord.RichEmbed()
+                    .setAuthor(guild.name)
+                    .setDescription('Server information is now being displayed.')
+                    .addField('Owner', `${guild.owner.user.username}#${guild.owner.user.discriminator}`)
+                    .addField('Server ID', guild.id)
+                    .addField('Time of Creation', guild.createdAt)
+                    .addField('Icon URL', icon)
+                    .setThumbnail(guild.iconURL)
+                    .addField('Members', guild.memberCount);
+                return message.channel.send(embed);
   }
 });
 
