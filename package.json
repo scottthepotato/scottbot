@@ -1,13 +1,12 @@
 {
-  "name": "Test",
+  "name": "scott-bot",
   "description": "Test",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "server.js",
   "scripts": {
     "start": "node bot.js"
   },
   "dependencies": {
-    "discord.js": "11.1.0",
-    "request": "2.81.0"
+    "discord.js": "11.1.0"
   }
 }
