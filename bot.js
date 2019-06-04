@@ -60,6 +60,10 @@ client.on('message', msg => {
   }
 });
 
+var oasis = ('0Diq6WvXm84rFnfTe76k7g2O65pICce1');
+
+
+
 ///moderation code
 /*
 if (member.hasPermission('KICK_MEMBERS')) {
@@ -111,5 +115,5 @@ client.on('message', message => {
 
 
 ///login key
-client.login('0Diq6WvXm84rFnfTe76k7g2O65pICce1');
+client.login(oasis);
 
